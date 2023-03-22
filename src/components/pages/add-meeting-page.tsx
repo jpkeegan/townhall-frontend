@@ -54,8 +54,6 @@ export function AddMeetingPage({ user }: AddMeetingPageProps) {
     };
   
     const createdMeeting = await addMeeting(newMeeting);
-
-    console.log("Created meeting:", createdMeeting);
   
     for (const complaintId of Array.from(selectedComplaints)) {
       const complaintToUpdate = complaints.find((complaint) => complaint.complaint_id === complaintId);
@@ -64,7 +62,6 @@ export function AddMeetingPage({ user }: AddMeetingPageProps) {
           ...complaintToUpdate,
           meeting_id: createdMeeting.meeting_id,
         };
-        console.log("Updating complaint:", updatedComplaint);
         await updateComplaint(complaintId, updatedComplaint);
       }
     }
