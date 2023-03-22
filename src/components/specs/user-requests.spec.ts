@@ -2,7 +2,7 @@ import { User, login, getAllUsers, LoginData, getUsersByRole, addUser, updateUse
 import nock from "nock";
 
 describe('User API Requests', () => {
-    const API_BASE_URL = 'http://localhost:3000'; // Replace with your actual API base URL
+    const API_BASE_URL = 'http://localhost:3000';
 
     let testUser: User;
 

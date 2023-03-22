@@ -3,7 +3,7 @@ import { addMeeting, deleteMeeting, Meeting } from "../requests/meeting-requests
 import nock from "nock";
 
 describe('Complaint API Requests', () => {
-    const API_BASE_URL = 'http://localhost:3000'; // Replace with your actual API base URL
+    const API_BASE_URL = 'http://localhost:3000';
 
     let testComplaint: Complaint;
     let testMeeting: Meeting;

@@ -3,7 +3,7 @@ import nock from "nock";
 
 
 describe('Meeting API Requests', () => {
-    const API_BASE_URL = 'http://localhost:3000'; // Replace with your actual API base URL
+    const API_BASE_URL = 'http://localhost:3000';
 
     let testMeeting: Meeting;
 
